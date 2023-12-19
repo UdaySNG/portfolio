@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useDarkMode } from "./DarkMode"; // Update the path accordingly
 import "../scss/components/header.scss";
 
 const MenuItem = ({ label, onClick }) => (
@@ -8,7 +9,8 @@ const MenuItem = ({ label, onClick }) => (
 );
 
 const Header = (props) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, toggleDarkMode } = useDarkMode();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -24,11 +26,6 @@ const Header = (props) => {
     };
   }, []);
 
-  const toggleDarkMode = () => {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-    document.body.classList.toggle("dark-mode", !darkMode);
-  };
-
   const toggleMenu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
@@ -37,6 +34,7 @@ const Header = (props) => {
   const navClass = `header__nav ${menuOpen ? "header__nav--open" : ""}`;
   const darkModeToggleClass = "header__darkmode-toggle";
 
+  
   return (
     <header className={headerClass}>
       {isMobile && (
@@ -54,7 +52,7 @@ const Header = (props) => {
         <MenuItem label="About me" onClick={toggleMenu} />
         <MenuItem label="Contact" onClick={toggleMenu} />
       </div>
-      
+
       <button
         className={`${darkModeToggleClass} ${darkMode ? "dark-mode" : ""}`}
         onClick={toggleDarkMode}
