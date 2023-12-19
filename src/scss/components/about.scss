@@ -1,0 +1,41 @@
+@use "../abstracts/reset";
+@use "../abstracts/darkmode";
+
+
+.about-wrapper {
+    display: flex;
+    align-items: center; /* Center de inhoud verticaal */
+    justify-content: center; /* Center de inhoud horizontaal */
+    padding: 20rem;
+    height: auto;
+  }
+  
+  .about {
+    width:  800px;
+
+
+ 
+  
+    &__section {
+      display: flex;
+      flex-direction: column; /* Zet de flexrichting naar kolom voor de tekstcentrering */
+      align-items: center; /* Center de inhoud van de sectie */
+    
+      border-radius: 4px;
+  
+      h3 {
+        font-size: 2.7em; /* Vergroot de kopgrootte voor betere leesbaarheid */
+        color: #000000;
+        text-align: start; /* Center de tekst binnen de sectie */
+    
+      }
+  
+    }
+  }
+
+  .about__description{
+    font-size: 3rem;
+    padding-top: 1rem;
+
+  }
+  

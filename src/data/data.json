@@ -55,6 +55,51 @@
         "languages": ["HTML", "CSS", "JavaScript"]
       }
      
+    ],
+
+    "cards": [
+      {
+        "title": "HTML",
+        "icon": "fa-html5",
+        "text": "Proficient in various programming languages including Python, JavaScript, and Java.",
+        "experience": "2 years"
+      },
+      {
+        "title": "Css",
+        "icon": "fa-brands fa-css3-alt",
+        "text": "Experience in building responsive and interactive web applications using HTML, CSS, and React.",
+        "experience": "1.5 years"
+      },
+      {
+        "title": "Scss",
+        "icon": "fa-brands fa-sass",
+        "text": "Skilled in data analysis and visualization using tools like Pandas, Matplotlib, and Tableau.",
+        "experience": "2.5 years"
+      },
+      {
+        "title": "Javascript",
+        "icon": "fa-brands fa-js",
+        "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+        "experience": "1.5 years"
+      },
+      {
+        "title": "React",
+        "icon": "fa-brands fa-react",
+        "text": "Adept at creating visually appealing designs using tools like Adobe Photoshop and Illustrator.",
+        "experience": "1 year"
+      },
+      {
+        "title": "After Effects",
+        "icon": "devicon-aftereffects-plain",
+        "text": "Proven ability to work collaboratively in cross-functional teams and communicate effectively.",
+        "experience": "3 years"
+      },
+      {
+        "title": "Adobe XD",
+        "icon": "devicon-xd-plain",
+        "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+        "experience": "1.5 years"
+      }
     ]
   }
   

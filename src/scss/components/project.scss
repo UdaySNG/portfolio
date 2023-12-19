@@ -2,6 +2,14 @@
 @use "../abstracts/darkmode";
 
 .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+ 
+
   &__title {
     font-size: 3rem;
   }
@@ -13,6 +21,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 98%;
+    gap: 3rem;
   }
 
   &__item {
@@ -49,35 +59,28 @@
     align-items: center;
     width: 100%;
     margin: 1px 0px;
-
   }
 
-  
   &__language {
     display: flex;
     gap: 0.5rem;
-  
+
     i {
       opacity: 1;
       transition: opacity 0.3s ease; /* Transition for opacity */
-  
+
       &:hover {
-    
         opacity: 0.7;
         animation: bounce 1s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5); /* Smooth bouncing animation */
       }
     }
   }
-  
+
   @keyframes bounce {
     to {
       transform: translateY(-8px); /* Adjust the bounce height */
     }
   }
-  
-  
-  
-  
 
   &__link {
     display: inline-block;
@@ -119,4 +122,10 @@
     gap: 1rem;
     // Your additional styles for projects__info
   }
+
+  .projects__heading {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
 }

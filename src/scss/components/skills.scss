@@ -1,0 +1,71 @@
+@use "../abstracts/reset";
+@use "../abstracts/darkmode";
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(50% - 20px);
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__icon {
+    font-size: 3.5rem;
+    margin-top: 20px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 2.6rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  &__experience {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+@media (max-width: 62.5rem) {
+  .skills-container {
+    flex-wrap: wrap; /* Adjust flex-wrap property to nowrap for single row on small screens */
+    justify-content:  center; /* Add space between cards */
+    padding: 10px;
+  }
+
+  .skill-card {
+    width: 100%; /* Take up the full width on smaller screens */
+  }
+}
