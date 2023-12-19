@@ -1,0 +1,61 @@
+{
+    "projecten": [
+      {
+        "id": 1,
+        "image": "./images/placeholder.png",
+        "title": "Project 1",
+        "text": "Beschrijving van project 1.",
+        "link": "https://www.example.com/project1"
+      },
+      {
+        "id": 2,
+        "image": "./images/placeholder.png",
+        "title": "Project 2",
+        "text": "Beschrijving van project 2.",
+        "link": "https://www.example.com/project2"
+      },
+      {
+        "id": 3,
+        "image": "./images/placeholder.png",
+        "title": "Project 3",
+        "text": "Beschrijving van project 3.",
+        "link": "https://www.example.com/project3"
+      },
+      {
+        "id": 4,
+        "image": "./images/placeholder.png",
+        "title": "Project 4",
+        "text": "Beschrijving van project 4.",
+        "link": "https://www.example.com/project4"
+      },
+      {
+        "id": 5,
+        "image": "./images/placeholder.png",
+        "title": "Project 5",
+        "text": "Beschrijving van project 5.",
+        "link": "https://www.example.com/project5"
+      },
+      {
+        "id": 6,
+        "image": "./images/placeholder.png",
+        "title": "Project 6",
+        "text": "Beschrijving van project 6.",
+        "link": "https://www.example.com/project6"
+      },
+      {
+        "id": 7,
+        "image": "./images/placeholder.png",
+        "title": "Project 7",
+        "text": "Beschrijving van project 7.",
+        "link": "https://www.example.com/project7"
+      },
+      {
+        "id": 8,
+        "image": "./images/placeholder.png",
+        "title": "Project 8",
+        "text": "Beschrijving van project 8.",
+        "link": "https://www.example.com/project8"
+      }
+    ]
+  }
+  
