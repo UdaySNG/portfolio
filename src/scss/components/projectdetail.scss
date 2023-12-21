@@ -1,0 +1,229 @@
+.project__detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+
+  &__title-and-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    flex-direction: row-reverse;
+  }
+
+  &__title {
+    font-size: 5rem;
+    transition: font-size 0.3s ease-in-out; /* Add transition property */
+  }
+
+  &__back__button {
+    font-size: 6rem;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out; /* Add transition property */
+  }
+
+  &__skills__and__duration {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 50%;
+  }
+
+  .project__detail__skills {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 5rem;
+
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  .project__detail__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .project__detail__duration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 4rem;
+    flex-direction: row;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .project__detail__content__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+  }
+
+  .project__detail__description {
+    justify-content: flex-start;
+    width: 50%;
+    height: 50%;
+    font-size: 2.5rem;
+    overflow: hidden;
+    transition: font-size 0.3s ease-in-out, height 0.3s ease-in-out; /* Add transition properties */
+  }
+
+  .project__details__accordion__wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .project__detail__accordion button {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 0.2rem rgb(0, 0, 0) solid;
+    width: 55rem;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition property */
+  
+    span {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 90%;
+    }
+  
+    &:hover {
+      background: #e6e6e6; /* Change to the desired hover background color */
+      color: #333; /* Change to the desired hover text color */
+    }
+  }
+  
+  .project__detail__accordion {
+    font-size: 2.5rem;
+    gap: 3rem;
+  
+    &.open {
+      .accordion__content {
+        max-height: 500px; /* Adjust to the desired open height */
+        transition: max-height 0.3s ease-in-out; /* Add transition property */
+      }
+    }
+  }
+  
+  .accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Add transition property */
+  }
+  
+  
+}
+
+
+@media (max-width: 62.5rem) {
+  @media (max-width: 62.5rem) {
+    .project__detail {
+      height: 100vh;
+      &__title-and-button {
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        text-align: right;
+        gap: 1rem;
+        padding-right: 2rem;
+      }
+
+      &__title {
+        font-size: 4rem;
+      }
+
+      &__back__button {
+        font-size: 5rem;
+      }
+
+      &__skills__and__duration {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 0.2rem;
+      }
+
+      .project__detail__skills {
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+
+      .project__detail__duration {
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+
+        i {
+          margin-right: 5px;
+        }
+
+        .project__detail__image {
+          height: 20rem;
+          width: 10rem;
+        }
+      }
+      .project__detail__content__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+      }
+
+      .project__detail__description {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        font-size: 2rem;
+        overflow: hidden;
+        padding: 1rem;
+      }
+
+      .project__details__accordion__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4rem;
+      }
+
+      .project__detail__accordion button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.2rem rgb(0, 0, 0) solid;
+        width: 35rem;
+      }
+
+      .project__detail__accordion {
+        font-size: 2rem;
+      }
+
+      .accordion__content.open {
+        display: block;
+      }
+    }
+  }
+}

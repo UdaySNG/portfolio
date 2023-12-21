@@ -1,105 +1,118 @@
 {
-    "projecten": [
-      {
-        "id": 1,
-        "image": "./images/placeholder.png",
-        "title": "Udemy Clone",
-        "text": "Beschrijving van project 1.",
-        "link": "https://www.example.com/project1",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "id": 2,
-        "image": "./images/placeholder.png",
-        "title": "Project 2",
-        "text": "Beschrijving van project 2.",
-        "link": "https://www.example.com/project2",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "id": 3,
-        "image": "./images/placeholder.png",
-        "title": "Project 3",
-        "text": "Beschrijving van project 3.",
-        "link": "https://www.example.com/project3",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "id": 4,
-        "image": "./images/placeholder.png",
-        "title": "Project 4",
-        "text": "Beschrijving van project 4.",
-        "link": "https://www.example.com/project4",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "id": 5,
-        "image": "./images/placeholder.png",
-        "title": "Project 5",
-        "text": "Beschrijving van project 5.",
-        "link": "https://www.example.com/project5",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "id": 6,
-        "image": "./images/placeholder.png",
-        "title": "Project 6",
-        "text": "Beschrijving van project 6.",
-        "link": "https://www.example.com/project6",
-        "numPeople": 3,
-        "languages": ["HTML", "CSS", "JavaScript"]
-      }
-     
-    ],
+  "projecten": [
+    {
+      "id": 1,
+      "image": "./images/placeholder.png",
+      "title": "Udemy Clone",
+      "intro": "A clone of the frontpage of Udemy",
+      "text": "I set out to replicate Udemy's Landing page. Using HTML, CSS, and JavaScript. This solo project Improved my skills massively and was completed in just four weeks.",
+      "link": "https://www.example.com/project1",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "features": "hoi",
+      "upcoming": "yo",
+      "details": "yeah",
+      "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "image": "./images/placeholder.png",
+      "title": "Project 2",
+      "intro": "yo",
+      "text": "Beschrijving van project 2.",
+      "link": "https://www.example.com/project2",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 3,
+      "image": "./images/placeholder.png",
+      "title": "Project 3",
+      "intro": "yo",
+      "text": "Beschrijving van project 3.",
+      "link": "https://www.example.com/project3",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 4,
+      "image": "./images/placeholder.png",
+      "title": "Project 4",
+      "intro": "yo",
+      "text": "Beschrijving van project 4.",
+      "link": "https://www.example.com/project4",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 5,
+      "image": "./images/placeholder.png",
+      "title": "Project 5",
+      "intro": "yo",
+      "text": "Beschrijving van project 5.",
+      "link": "https://www.example.com/project5",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 6,
+      "image": "./images/placeholder.png",
+      "title": "Project 6",
+      "intro": "yo",
+      "text": "Beschrijving van project 6.",
+      "link": "https://www.example.com/project6",
+      "numPeople": 1,
+      "duration": "3 weeks",
+      "languages": ["React", "SCSS", "JavaScript"]
+    }
+  ],
 
-    "cards": [
-      {
-        "title": "HTML",
-        "icon": "fa-html5",
-        "text": "Proficient in various programming languages including Python, JavaScript, and Java.",
-        "experience": "2 years"
-      },
-      {
-        "title": "Css",
-        "icon": "fa-brands fa-css3-alt",
-        "text": "Experience in building responsive and interactive web applications using HTML, CSS, and React.",
-        "experience": "1.5 years"
-      },
-      {
-        "title": "Scss",
-        "icon": "fa-brands fa-sass",
-        "text": "Skilled in data analysis and visualization using tools like Pandas, Matplotlib, and Tableau.",
-        "experience": "2.5 years"
-      },
-      {
-        "title": "Javascript",
-        "icon": "fa-brands fa-js",
-        "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
-        "experience": "1.5 years"
-      },
-      {
-        "title": "React",
-        "icon": "fa-brands fa-react",
-        "text": "Adept at creating visually appealing designs using tools like Adobe Photoshop and Illustrator.",
-        "experience": "1 year"
-      },
-      {
-        "title": "After Effects",
-        "icon": "devicon-aftereffects-plain",
-        "text": "Proven ability to work collaboratively in cross-functional teams and communicate effectively.",
-        "experience": "3 years"
-      },
-      {
-        "title": "Adobe XD",
-        "icon": "devicon-xd-plain",
-        "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
-        "experience": "1.5 years"
-      }
-    ]
-  }
-  
+  "cards": [
+    {
+      "title": "HTML",
+      "icon": "fa-html5",
+      "text": "Proficient in various programming languages including Python, JavaScript, and Java.",
+      "experience": "2 years"
+    },
+    {
+      "title": "Css",
+      "icon": "fa-brands fa-css3-alt",
+      "text": "Experience in building responsive and interactive web applications using HTML, CSS, and React.",
+      "experience": "1.5 years"
+    },
+    {
+      "title": "Scss",
+      "icon": "fa-brands fa-sass",
+      "text": "Skilled in data analysis and visualization using tools like Pandas, Matplotlib, and Tableau.",
+      "experience": "2.5 years"
+    },
+    {
+      "title": "Javascript",
+      "icon": "fa-brands fa-js",
+      "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+      "experience": "1.5 years"
+    },
+    {
+      "title": "React",
+      "icon": "fa-brands fa-react",
+      "text": "Adept at creating visually appealing designs using tools like Adobe Photoshop and Illustrator.",
+      "experience": "1 year"
+    },
+    {
+      "title": "After Effects",
+      "icon": "devicon-aftereffects-plain",
+      "text": "Proven ability to work collaboratively in cross-functional teams and communicate effectively.",
+      "experience": "3 years"
+    },
+    {
+      "title": "Adobe XD",
+      "icon": "devicon-xd-plain",
+      "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+      "experience": "1.5 years"
+    }
+  ]
+}

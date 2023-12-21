@@ -1,6 +1,6 @@
 // Project.jsx
-
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../scss/components/project.scss";
 import projectsData from "../data/data.json";
 
@@ -8,9 +8,7 @@ const Project = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Check if projectsData has the expected structure
     if (projectsData && Array.isArray(projectsData.projecten)) {
-      // Set the projects state with data from the JSON file
       setProjects(projectsData.projecten);
     } else {
       console.error("Invalid projectsData structure:", projectsData);
@@ -18,9 +16,11 @@ const Project = () => {
   }, []);
 
   const languageToIcon = {
-    javascript: "devicon-javascript-plain",
-    html: "devicon-html5-plain",
-    css: "devicon-css3-plain",
+    HTML: "fa-brands fa-html5",
+    CSS: "fa-brands fa-css3-alt",
+    SCSS: "fa-brands fa-sass",
+    JavaScript: "fa-brands fa-js",
+    React: "fa-brands fa-react",
     // Add more mappings as needed
   };
 
@@ -38,16 +38,15 @@ const Project = () => {
               />
               <div className="projects__content">
                 <h4 className="projects__title">{project.title}</h4>
-                <p className="projects__text">{project.text}</p>
+                <p className="projects__text">{project.intro}</p>
                 <p className="projects__info">
                   <span>
-                    <i className="fas fa-users"></i> {project.numPeople} People
+                    <i className="fas fa-users"></i> {project.numPeople}
                   </span>
                   {project.languages && Array.isArray(project.languages) ? (
                     <span className="projects__language">
                       {project.languages.map((language, index) => {
-                        const iconClass =
-                          languageToIcon[language.toLowerCase()];
+                        const iconClass = languageToIcon[language];
                         return iconClass ? (
                           <i key={index} className={iconClass}></i>
                         ) : null;
@@ -57,14 +56,12 @@ const Project = () => {
                     <span>No languages specified</span>
                   )}
                 </p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="projects__link"
-                >
-                  Learn More
-                </a>
+                {/* Only render the Link if there is a valid project */}
+                {project.id && (
+                  <Link to={`/modal/${project.id}`} className="projects__link">
+                    Learn More
+                  </Link>
+                )}
               </div>
             </li>
           ))
