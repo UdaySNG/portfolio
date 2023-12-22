@@ -1,4 +1,6 @@
 {
+  "homepage": "https://UdaySNG.github.io/portfolio/",
+
   "name": "portfolio-uday",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile-sass": "sass src/scss/style.scss src/css/style.css"
+    "compile-sass": "sass src/scss/style.scss src/css/style.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

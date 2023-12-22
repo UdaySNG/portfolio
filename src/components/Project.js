@@ -25,14 +25,14 @@ const Project = () => {
   };
 
   return (
-    <section  className="projects">
-      <h3  className="projects__heading">My Projects</h3>
+    <section className="projects">
+      <h3 className="projects__heading">My Projects</h3>
       <ul className="projects__list">
         {Array.isArray(projects) && projects.length > 0 ? (
           projects.map((project) => (
             <li key={project.id} className="projects__item">
               <img
-                src={project.image}
+                src={`${process.env.PUBLIC_URL}/${project.image}`}
                 alt={project.title}
                 className="projects__image"
               />

@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import Modal from "./components/ProjectDetail"; // Import the Modal component
 import '@fortawesome/fontawesome-svg-core/styles.css';
