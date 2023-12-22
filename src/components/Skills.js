@@ -5,7 +5,7 @@ import skillsData from "../data/data.json";
 const Skills = () => {
   return (
     <section>
-      <h3 className="skills-heading">Skills</h3>
+      <h3 className="skills-heading">Skills.</h3>
       <div className="skills-container">
         {skillsData.cards.map((card, index) => (
           <article key={index} className="skill-card">

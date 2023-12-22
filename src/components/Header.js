@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { useDarkMode } from "./DarkMode"; // Update the path accordingly
+import { useDarkMode } from "./DarkMode";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import "../scss/components/header.scss";
 
-const MenuItem = ({ label, onClick }) => (
-  <button className="header__buttons" onClick={onClick}>
-    {label}
-  </button>
+const MenuItem = ({ label, to, onClick }) => (
+  <Link
+    activeClass="active" // Add an 'active' class to the active link
+    to={to}
+    spy={true}
+    smooth={true}
+    offset={-70} // Adjust the offset if needed to account for fixed header
+    duration={500}
+  >
+    <button className="header__buttons" onClick={onClick}>
+      {label}
+    </button>
+  </Link>
 );
 
 const Header = (props) => {
@@ -34,7 +44,6 @@ const Header = (props) => {
   const navClass = `header__nav ${menuOpen ? "header__nav--open" : ""}`;
   const darkModeToggleClass = "header__darkmode-toggle";
 
-  
   return (
     <header className={headerClass}>
       {isMobile && (
@@ -47,10 +56,10 @@ const Header = (props) => {
         </div>
       )}
       <div className={navClass}>
-        <MenuItem label="Home" onClick={toggleMenu} />
-        <MenuItem label="Projects" onClick={toggleMenu} />
-        <MenuItem label="About me" onClick={toggleMenu} />
-        <MenuItem label="Contact" onClick={toggleMenu} />
+        {/* <MenuItem label="Home" to="home" onClick={toggleMenu} /> */}
+        <MenuItem label="Projects" to="projects" onClick={toggleMenu} />
+        <MenuItem label="About me" to="about" onClick={toggleMenu} />
+        <MenuItem label="Contact" to="footer" onClick={toggleMenu} />
       </div>
 
       <button

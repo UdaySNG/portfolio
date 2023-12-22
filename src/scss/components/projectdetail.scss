@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
 
@@ -11,7 +11,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
-    width: 50%;
+    width: 67%;
     flex-direction: row-reverse;
   }
 
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    width: 50%;
+    width: 68%;
   }
 
   .project__detail__skills {
@@ -46,7 +46,9 @@
   }
 
   .project__detail__image {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -67,14 +69,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 70%;
     height: 30%;
   }
 
   .project__detail__description {
     justify-content: flex-start;
     width: 50%;
-    height: 50%;
+    height: 70%;
     font-size: 2.5rem;
     overflow: hidden;
     transition: font-size 0.3s ease-in-out, height 0.3s ease-in-out; /* Add transition properties */
@@ -95,24 +97,24 @@
     border-bottom: 0.2rem rgb(0, 0, 0) solid;
     width: 55rem;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition property */
-  
+
     span {
       display: flex;
       justify-content: flex-end;
       align-items: center;
       width: 90%;
     }
-  
+
     &:hover {
-      background: #e6e6e6; /* Change to the desired hover background color */
       color: #333; /* Change to the desired hover text color */
+      cursor: pointer;
     }
   }
-  
+
   .project__detail__accordion {
     font-size: 2.5rem;
     gap: 3rem;
-  
+
     &.open {
       .accordion__content {
         max-height: 500px; /* Adjust to the desired open height */
@@ -120,21 +122,31 @@
       }
     }
   }
-  
+
   .accordion__content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out; /* Add transition property */
   }
-  
-  
-}
 
+  .dark-mode-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 4rem; // Adjust the font size as needed
+    cursor: pointer;
+    color: #fff;
+    border: none;
+
+    transition: 0.3s;
+  }
+}
 
 @media (max-width: 62.5rem) {
   @media (max-width: 62.5rem) {
     .project__detail {
-      height: 100vh;
+      height: 100%;
       &__title-and-button {
         width: 100%;
         justify-content: flex-end;
@@ -225,5 +237,16 @@
         display: block;
       }
     }
+  }
+
+  .project__detail .dark-mode-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 4rem; // Adjust the font size as needed
+    cursor: pointer;
+    padding-right: 2rem;
   }
 }

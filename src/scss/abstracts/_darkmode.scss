@@ -51,4 +51,13 @@ body.dark-mode {
   .about h3 {
     color: #ffffff;
   }
+
+  i{
+    color: #ffffff;
+  }
+
+  .project__detail .project__detail__accordion button {
+    border-bottom: 0.2rem rgb(255, 255, 255) solid;
+    color: white;
+}
 }

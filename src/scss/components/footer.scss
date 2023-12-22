@@ -2,41 +2,26 @@
 @use "../abstracts/darkmode";
 
 .footer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
   
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    margin: 0 10px;
-    font-size: 4rem;
-    color: #000000;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2);
-  }
   
   .copyright {
-    margin-top: 20px;
-    font-size: 1.8rem;
+    margin-top: 40px;
+    font-size: 2rem;
     color: #000000; // Adjust the color as needed
+    transition: 1s ease-in;
+
+     &:hover {
+      text-decoration: black underline;
+    }
   }
-  
-  .copyright a {
-    color: #fff; // Style the link color if you have links in the copyright text
-    text-decoration: none;
-  }
-  
-  .copyright a:hover {
-    text-decoration: underline;
-  }
+
+
   

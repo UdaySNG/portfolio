@@ -11,8 +11,8 @@
 
 .skills-heading {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 5rem;
+  margin-bottom: 40px;
 }
 
 .skill-card {
@@ -25,16 +25,24 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8; /* Change background color on hover */
   }
 
   &__icon {
     font-size: 3.5rem;
     margin-top: 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .hovered &__icon {
+    transform: rotate(360deg); /* Rotate the icon on hover */
+    color: #555; /* Adjust the color when hovered */
   }
 
   &__content {
@@ -60,12 +68,12 @@
 
 @media (max-width: 62.5rem) {
   .skills-container {
-    flex-wrap: wrap; /* Adjust flex-wrap property to nowrap for single row on small screens */
-    justify-content:  center; /* Add space between cards */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
   }
 
   .skill-card {
-    width: 100%; /* Take up the full width on smaller screens */
+    width: 100%;
   }
 }

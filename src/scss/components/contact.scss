@@ -1,0 +1,74 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  gap: 8rem;
+
+  .contact__heading {
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .contact__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    width: 30rem;
+    height: 200px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+    &:hover {
+      transform: translateY(-10px) rotate(5deg);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.561);
+      background-color: #232323; /* Add a darker background on hover */
+    }
+
+    &.hovered {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact__icon {
+      font-size: 6rem;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .contact__info {
+      p {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+
+      }
+    }
+
+    &:hover .contact__icon {
+      transform: scale(1.2);
+      color: #ffffff; /* Change icon color on hover */
+    }
+
+    &:hover .contact__info {
+      transform: scale(1.2);
+      color: #ffffff; /* Change icon color on hover */
+    }
+  }
+}

@@ -1,10 +1,16 @@
+// ProjectDetail.js
+
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import projectsData from "../data/data.json";
+import { useDarkMode } from "./DarkMode"; // Update the path accordingly
 import "../scss/components/projectdetail.scss";
+import Footer from "../components/Footer";
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const { darkMode, toggleDarkMode } = useDarkMode(); // Move this line to the top
+
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const [isSecondAccordionOpen, setSecondAccordionOpen] = useState(false);
   const [isThirdAccordionOpen, setThirdAccordionOpen] = useState(false);
@@ -63,8 +69,18 @@ const ProjectDetail = () => {
   const hasAccordionContent =
     project.features || project.upcoming || project.details;
 
+  const darkModeToggleClass = "dark-mode"; // Define the darkModeToggleClass here
+
   return (
-    <main className="project__detail">
+    <main className={`project__detail ${darkMode ? "dark-mode" : ""}`}>
+      <button
+        className={`dark-mode-button ${darkModeToggleClass} ${
+          darkMode ? "dark-mode" : ""
+        }`}
+        onClick={toggleDarkMode}
+      >
+        {darkMode ? "🔆" : "🌙"}
+      </button>
       <header className="project__detail__title-and-button">
         <h2 className="project__detail__title">{project.title}</h2>
         <button
@@ -136,6 +152,7 @@ const ProjectDetail = () => {
           )}
         </article>
       </section>
+      <Footer id="footer" />
     </main>
   );
 };
