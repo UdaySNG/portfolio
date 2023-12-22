@@ -1,21 +1,31 @@
-// ProjectDetail.js
-
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import projectsData from "../data/data.json";
-import { useDarkMode } from "./DarkMode"; // Update the path accordingly
+import { useDarkMode } from "./DarkMode";
 import "../scss/components/projectdetail.scss";
 import Footer from "../components/Footer";
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const { darkMode, toggleDarkMode } = useDarkMode(); // Move this line to the top
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const [isSecondAccordionOpen, setSecondAccordionOpen] = useState(false);
   const [isThirdAccordionOpen, setThirdAccordionOpen] = useState(false);
 
-  // Declare project here
+  // Function to scroll to the top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Check if the device is a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Scroll to the top when the component mounts
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   let project;
 
   const toggleAccordion = () => {
@@ -30,6 +40,7 @@ const ProjectDetail = () => {
     setThirdAccordionOpen(!isThirdAccordionOpen);
   };
 
+  // Validation and project retrieval
   if (!id || isNaN(parseInt(id, 10))) {
     return (
       <section className="project-detail project-detail--error">
@@ -41,7 +52,6 @@ const ProjectDetail = () => {
     );
   }
 
-  // Move this block after the id validation
   project = projectsData.projecten.find((p) => p.id === parseInt(id, 10));
 
   if (!project) {
@@ -57,6 +67,7 @@ const ProjectDetail = () => {
     );
   }
 
+  // Mapping of languages to icons
   const languageToIcon = {
     HTML: "fa-brands fa-html5",
     CSS: "fa-brands fa-css3-alt",
@@ -69,7 +80,7 @@ const ProjectDetail = () => {
   const hasAccordionContent =
     project.features || project.upcoming || project.details;
 
-  const darkModeToggleClass = "dark-mode"; // Define the darkModeToggleClass here
+  const darkModeToggleClass = "dark-mode";
 
   return (
     <main className={`project__detail ${darkMode ? "dark-mode" : ""}`}>
@@ -90,7 +101,6 @@ const ProjectDetail = () => {
           <i className="fa-solid fa-arrow-left"></i>
         </button>
       </header>
-
       <div className="project__detail__image__wrapper">
         <img
           src={`${process.env.PUBLIC_URL}/${project.image}`}
@@ -98,13 +108,24 @@ const ProjectDetail = () => {
           className="project__detail__image"
         />
       </div>
-
       <div className="project__detail__skills__and__duration">
         <div className="project__detail__duration">
           <p>
             <i className="fa-solid fa-clock"></i>
             {project.duration}
           </p>
+        </div>
+        <div className="project__detail__buttons__wrapper">
+          <div className="project__detail__buttons">
+            {/* Add Live Site Button */}
+            <button className="project__detail__live-site">
+              <i className="fa-solid fa-globe"></i> View
+            </button>
+            {/* Add GitHub Button */}
+            <button className="project__detail__github">
+              <i className="fa-brands fa-github"></i> GitHub
+            </button>
+          </div>
         </div>
         <div className="project__detail__skills">
           <p>
@@ -116,7 +137,6 @@ const ProjectDetail = () => {
           </p>
         </div>
       </div>
-
       <section className="project__detail__content__wrapper">
         <article className="project__detail__description">
           <p>{project.text}</p>
