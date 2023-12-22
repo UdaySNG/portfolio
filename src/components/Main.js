@@ -1,6 +1,5 @@
 import React from "react";
 import "../scss/components/main.scss";
-import Header from "./Header";
 import Intro from "./Introduction";
 import Project from "./Project";
 import About from "./About";
