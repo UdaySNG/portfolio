@@ -1,8 +1,10 @@
+
+
 .project__detail {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: auto;
   width: 100%;
   flex-direction: column;
 
@@ -103,8 +105,103 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 130rem;
+    height: 70rem;
     border-radius: 1rem;
+    background-size: cover;
+  }
+
+  .slideshow-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 128rem;
+    height: 70%;
+    border-radius: 1rem;
+  }
+
+  .project__detail__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 70rem;
+    border-radius: 1rem;
+  }
+
+  .project__detail__image img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .slideshow-stripes {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+  }
+
+  .stripe {
+    width: 5rem;
+    height: 0.5rem;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+
+  .stripe.filled {
+    background-color: #333;
+  }
+
+  .pause-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .pause-button:hover {
+    color: #555;
+  }
+
+  .slideshow-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .slideshow-navigation button {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 6rem;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .slideshow-navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
   }
 
   .project__detail__duration {
@@ -189,9 +286,12 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    font-size: 4rem; // Adjust the font size as needed
+    padding-top: 2rem;
+    padding-right: 2rem;
+    font-size: 4.5rem; // Adjust the font size as needed
     cursor: pointer;
-    color: #fff;
+    color: #000000;
+
     border: none;
 
     transition: 0.3s;
@@ -219,7 +319,8 @@
     }
 
     &__back__button {
-      font-size: 5rem;
+      margin-left: 1rem;
+      font-size: 4rem;
       order: -1; /* Move back button to the beginning */
     }
     &__skills__and__duration {
@@ -246,9 +347,23 @@
       }
     }
 
+    .project__detail__image__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      padding: 1.1rem;
+      object-fit: contain;
+    }
+
     .project__detail__image {
-      height: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
       width: 100%; /* Adjust width */
+      border-radius: 5px;
     }
 
     .project__detail__content__wrapper {

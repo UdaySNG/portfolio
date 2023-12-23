@@ -66,7 +66,7 @@ const Header = (props) => {
         className={`${darkModeToggleClass} ${darkMode ? "dark-mode" : ""}`}
         onClick={toggleDarkMode}
       >
-        {darkMode ? "🔆" : "🌙"}
+        {darkMode ? <i class="fa-solid fa-sun"></i> :<i class="fa-solid fa-moon"></i>}
       </button>
     </header>
   );

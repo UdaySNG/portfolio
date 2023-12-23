@@ -2,72 +2,87 @@
   "projecten": [
     {
       "id": 1,
-      "image": "./images/placeholder.png",
-      "title": "Udemy Clone",
+      "image": [
+        "./images/projecten/udemy.jpg",
+        "./images/projecten/udemy2.jpg"
+      ],
+      "title": "Udemy-Clone",
       "intro": "A clone of the frontpage of Udemy",
       "text": "I set out to replicate Udemy's Landing page. Using HTML, CSS, and JavaScript. This solo project Improved my skills massively and was completed in just four weeks.",
       "link": "https://www.example.com/project1",
       "numPeople": 1,
       "duration": "3 weeks",
-      "features": "hoi",
-      "upcoming": "yo",
-      "details": "yeah",
-      "languages": ["HTML", "CSS", "JavaScript"]
+      "features": "",
+      "upcoming": "",
+      "details": "",
+      "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
       "id": 2,
-      "image": "./images/placeholder.png",
-      "title": "Project 2",
-      "intro": "yo",
-      "text": "Beschrijving van project 2.",
+      "image": ["./images/projecten/banky.webp"],
+      "title": "Banky",
+      "intro": "A small banking app",
+      "text": "In a span of three weeks, I created a bank application, during which I deepened my knowledge of JSON and JavaScript. This project was a valuable learning experience in managing financial data and displaying it on the screen.",
       "link": "https://www.example.com/project2",
       "numPeople": 1,
       "duration": "3 weeks",
-      "languages": ["HTML", "CSS", "JavaScript"]
+      "features": "OOP",
+      "upcoming": "",
+      "details": "Rendered in javascript",
+      "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
       "id": 3,
-      "image": "./images/placeholder.png",
-      "title": "Project 3",
-      "intro": "yo",
-      "text": "Beschrijving van project 3.",
+      "image": ["./images/projecten/colorpick.webp"],
+      "title": "Colorpicker",
+      "intro": "A big colorpicker site",
+      "text": "Inspired by Colorhunt, my go to color website, I created a color picker using HTML, CSS, and JavaScript. This project enhanced my web development skills and allowed me to explore my artistic side. I completed it in less than one and a half weeks, thanks to valuable learning experiences, all on my own.",
       "link": "https://www.example.com/project3",
       "numPeople": 1,
       "duration": "3 weeks",
-      "languages": ["HTML", "CSS", "JavaScript"]
+      "features": "HSL",
+      "upcoming": "",
+      "details": "Rendered in javascript",
+      "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
       "id": 4,
-      "image": "./images/placeholder.png",
-      "title": "Project 4",
-      "intro": "yo",
-      "text": "Beschrijving van project 4.",
+      "image": ["./images/projecten/yubtub.webp"],
+      "title": "Yubtub",
+      "intro": "A youtube clone",
+      "text": "I independently crafted a YouTube clone with a Twitch-style interface, starting with local videos and aiming to incorporate real YouTube links. While challenging, this all-JavaScript project was immensely rewarding.",
       "link": "https://www.example.com/project4",
       "numPeople": 1,
-      "duration": "3 weeks",
-      "languages": ["HTML", "CSS", "JavaScript"]
+      "duration": "1.5 weeks",
+      "features": "hovering player - comments",
+      "upcoming": "",
+      "details": "Rendered in javascript",
+      "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
       "id": 5,
-      "image": "./images/placeholder.png",
-      "title": "Project 5",
-      "intro": "yo",
-      "text": "Beschrijving van project 5.",
+      "image": ["./images/projecten/encrypt.webp"],
+      "title": "Encrypter",
+      "intro": "An encrypter app",
+      "text": "using the Caesar cipher method in JavaScript i created an app for encrypting and decrypting messages",
       "link": "https://www.example.com/project5",
       "numPeople": 1,
-      "duration": "3 weeks",
-      "languages": ["HTML", "CSS", "JavaScript"]
+      "duration": "2 weeks",
+      "features": "Text encryption",
+      "upcoming": "",
+      "details": "Rendered in javascript - Caesar cipher",
+      "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
       "id": 6,
-      "image": "./images/placeholder.png",
-      "title": "Project 6",
-      "intro": "yo",
-      "text": "Beschrijving van project 6.",
+      "image": ["./images/placeholder.png"],
+      "title": "Amsterdam BMV",
+      "intro": "In Works",
+      "text": "In Works",
       "link": "https://www.example.com/project6",
-      "numPeople": 1,
+      "numPeople": 0,
       "duration": "3 weeks",
-      "languages": ["React", "SCSS", "JavaScript"]
+      "languages": [""]
     }
   ],
 

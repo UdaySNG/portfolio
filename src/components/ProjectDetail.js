@@ -82,6 +82,8 @@ const ProjectDetail = () => {
 
   const darkModeToggleClass = "dark-mode";
 
+  const isSlideshow = project.image && project.image.length > 1;
+
   return (
     <main className={`project__detail ${darkMode ? "dark-mode" : ""}`}>
       <button
@@ -90,7 +92,11 @@ const ProjectDetail = () => {
         }`}
         onClick={toggleDarkMode}
       >
-        {darkMode ? "🔆" : "🌙"}
+        {darkMode ? (
+          <i className="fa-solid fa-sun"></i>
+        ) : (
+          <i className="fa-solid fa-moon"></i>
+        )}
       </button>
       <header className="project__detail__title-and-button">
         <h2 className="project__detail__title">{project.title}</h2>
@@ -102,11 +108,18 @@ const ProjectDetail = () => {
         </button>
       </header>
       <div className="project__detail__image__wrapper">
-        <img
-          src={`${process.env.PUBLIC_URL}/${project.image}`}
-          alt={project.title}
-          className="project__detail__image"
-        />
+        {isSlideshow ? (
+          <ImageSlideshow images={project.image} />
+        ) : (
+          project.image &&
+          project.image[0] && (
+            <img
+              src={`${process.env.PUBLIC_URL}/${project.image[0]}`}
+              alt={project.title}
+              className="project__detail__image"
+            />
+          )
+        )}
       </div>
       <div className="project__detail__skills__and__duration">
         <div className="project__detail__duration">
@@ -174,6 +187,62 @@ const ProjectDetail = () => {
       </section>
       <Footer id="footer" />
     </main>
+  );
+};
+
+const ImageSlideshow = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isPaused, setPaused] = useState(false);
+
+  useEffect(() => {
+    let intervalId;
+
+    if (Array.isArray(images) && images.length > 1 && !isPaused) {
+      intervalId = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 3000);
+    }
+
+    return () => clearInterval(intervalId);
+  }, [currentImageIndex, images, isPaused]);
+
+  const handleStripeClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handlePauseToggle = () => {
+    setPaused(!isPaused);
+  };
+
+  return (
+    <div className="project__detail__image slideshow-image">
+      {/* Pauzeknop */}
+      <button className="pause-button" onClick={handlePauseToggle}>
+        {isPaused ? (
+          <i className="fa-solid fa-play"></i>
+        ) : (
+          <i className="fa-solid fa-pause"></i>
+        )}
+      </button>
+
+      {/* Strepen als navigatie onder in het midden */}
+      <div className="slideshow-stripes">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`stripe ${index <= currentImageIndex ? "filled" : ""}`}
+            onClick={() => handleStripeClick(index)}
+          />
+        ))}
+      </div>
+      <img
+        src={`${process.env.PUBLIC_URL}/${images[currentImageIndex]}`}
+        alt="Slideshow"
+        style={{
+          transition: "opacity 0.3s ease-in-out", // Voeg een overgang toe aan de opacity
+        }}
+      />
+    </div>
   );
 };
 

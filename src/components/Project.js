@@ -26,16 +26,16 @@ const Project = () => {
 
   return (
     <section className="projects">
-      <h3 className="projects__heading">My Projects.</h3>
-      <ul className="projects__list">
-        {Array.isArray(projects) && projects.length > 0 ? (
-          projects.map((project) => (
-            <li key={project.id} className="projects__item">
-              <img
-                src={`${process.env.PUBLIC_URL}/${project.image}`}
-                alt={project.title}
-                className="projects__image"
-              />
+    <h3 className="projects__heading">My Projects.</h3>
+    <ul className="projects__list">
+      {Array.isArray(projects) && projects.length > 0 ? (
+        projects.map((project) => (
+          <li key={project.id} className="projects__item">
+            <img
+              src={`${process.env.PUBLIC_URL}/${Array.isArray(project.image) ? project.image[0] : project.image}`}
+              alt={project.title}
+              className="projects__image"
+            />
               <div className="projects__content">
                 <h4 className="projects__title">{project.title}</h4>
                 <p className="projects__text">{project.intro}</p>

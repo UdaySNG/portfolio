@@ -31,7 +31,6 @@
   &:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #f8f8f8; /* Change background color on hover */
   }
 
   &__icon {
@@ -41,8 +40,8 @@
   }
 
   .hovered &__icon {
-    transform: rotate(360deg); /* Rotate the icon on hover */
-    color: #555; /* Adjust the color when hovered */
+    transform: rotate(360deg);
+    color: #555;
   }
 
   &__content {
