@@ -52,12 +52,68 @@ body.dark-mode {
     color: #ffffff;
   }
 
-  i {
-    color: #ffffff;
-  }
+  // i {
+  //   color: #ffffff;
+  // }
 
   .project__detail .project__detail__accordion button {
     border-bottom: 0.2rem rgb(255, 255, 255) solid;
     color: white;
   }
+
+  .projects {
+    color: #ffffff;
+
+    &__item {
+      margin: 10px;
+      display: flex;
+      background-color: #00000071;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    &__image {
+      border-radius: 5px;
+    }
+
+    &__link {
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      transition: 0.3s ease;
+      text-align: center;
+      margin-top: 2rem;
+
+      &:hover {
+        background-color: #ffffffe7;
+        color: #000;
+      }
+
+      &__empty {
+        color: #fff;
+      }
+    }
+  }
+  .dark-mode-button {
+    color: #ffffff;
+  
+  }
+
+  
+}
+
+
+
+
+body.dark-mode .fab.fa-github,
+body.dark-mode .fas.fa-users,
+body.dark-mode .fa-solid fa-moon,
+body.dark-mode .fa-solid fa-sun,
+body.dark-mode .fa-solid.fa-arrow-left {
+  color: #ffffff;
 }

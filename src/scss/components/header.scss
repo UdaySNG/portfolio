@@ -10,7 +10,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjusted for space between elements */
+  justify-content: space-between;
   height: 10rem;
   width: 100%;
   padding: 2rem;
@@ -21,18 +21,17 @@ body {
     font-size: 2.5rem;
     position: relative;
     text-decoration: none;
-    color: #000; /* Stel de gewenste tekstkleur in */
+    color: #000;
     transition: color 0.3s ease;
-    /* Voeg de underline toe aan de knoppen binnen header__buttons wanneer erover wordt gehoverd */
 
     &::after {
       content: "";
       position: absolute;
       width: 100%;
-      height: 2px; /* Stel de dikte van de underline in */
+      height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000; /* Stel de gewenste kleur van de underline in */
+      background-color: #000;
       visibility: hidden;
       transform: scaleX(0);
       transition: all 0.3s ease-in-out;
@@ -66,7 +65,7 @@ body {
   &__hamburger-menu {
     color: white;
     cursor: pointer;
-    display: none; /* Initially hidden on larger screens */
+    display: none;
   }
 
   /* Navigation title styles */
@@ -146,7 +145,7 @@ body {
   &__nav {
     display: flex;
     align-items: start;
-    justify-content: flex-end; // Deze regel is aangepast
+    justify-content: flex-end;
     gap: 1.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -156,7 +155,7 @@ body {
     }
   }
 
-  @media (max-width: 62.5rem) {
+  @media screen and (max-width: 62.5rem) {
     .header {
       flex-direction: column;
       align-items: flex-start;
@@ -171,22 +170,22 @@ body {
         align-items: flex-start;
 
         &__buttons {
-          margin-top: 1rem; // Dit zorgt voor wat ruimte tussen de navigatie en knoppen
+          margin-top: 1rem;
         }
       }
 
       &__nav--open {
         display: flex;
-        position: absolute; // Voeg deze regel toe
-        top: 5%; // Voeg deze regel toe
-        left: 2%; // Voeg deze regel toe
-        width: 100%; // Voeg deze regel toe
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        width: 100%;
       }
 
       /* Dark mode toggle styles for mobile */
       &__darkmode-toggle {
         position: absolute;
-        top: 0rem;
+        top: 0.8rem;
         right: 2rem;
         transition: color 0.3s ease;
       }

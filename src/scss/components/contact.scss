@@ -57,7 +57,6 @@
         font-size: 3rem;
         font-weight: bold;
         margin: 0;
-
       }
     }
 
@@ -69,6 +68,14 @@
     &:hover .contact__info {
       transform: scale(1.2);
       color: #ffffff; /* Change icon color on hover */
+    }
+  }
+}
+
+@media screen and (max-width: 62.5rem) {
+  .contact {
+    .contact__heading {
+      font-size: 3.7rem;
     }
   }
 }

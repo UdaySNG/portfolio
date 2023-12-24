@@ -90,43 +90,49 @@
     {
       "title": "HTML",
       "icon": "fa-html5",
-      "text": "Proficient in various programming languages including Python, JavaScript, and Java.",
+      "text": "Experienced in using html, i use it for most of my projects and make use of semantic code structure.",
       "experience": "2 years"
     },
     {
       "title": "Css",
       "icon": "fa-brands fa-css3-alt",
-      "text": "Experience in building responsive and interactive web applications using HTML, CSS, and React.",
+      "text": "Paired with html i make my work standout by using CSS, i always love experimenting and css helps me with that.",
       "experience": "2 years"
     },
     {
       "title": "Scss",
       "icon": "fa-brands fa-sass",
-      "text": "Skilled in data analysis and visualization using tools like Pandas, Matplotlib, and Tableau.",
+      "text": "Ever since i found Scss i never looked back, using scss i can work in a categorized way, making my workflow better.",
       "experience": "2.5 years"
     },
     {
       "title": "Javascript",
       "icon": "fa-brands fa-js",
-      "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+      "text": "A site needs to function, my experience in JS helps me make very functional sites, learning it also made my life around frameworks easier.",
       "experience": "1.5 years"
     },
     {
       "title": "React",
       "icon": "fa-brands fa-react",
-      "text": "Adept at creating visually appealing designs using tools like Adobe Photoshop and Illustrator.",
+      "text": "I started with React, and this portfolio is actually my first big project using it. I like it because it offers a lot of possibilities.",
       "experience": "6 months"
+    },
+    {
+      "title": "Git",
+      "icon": "fa-brands fa-git-alt",
+      "text": "Experience in using Git for individual and collaborative work",
+      "experience": "1.5 years"
     },
     {
       "title": "After Effects",
       "icon": "devicon-aftereffects-plain",
-      "text": "Proven ability to work collaboratively in cross-functional teams and communicate effectively.",
+      "text": "Experience in creating fun little video's in my spare time using AE",
       "experience": "3 years"
     },
     {
       "title": "Adobe XD",
       "icon": "devicon-xd-plain",
-      "text": "Experience in managing projects from initiation to completion, ensuring on-time delivery.",
+      "text": "In the absence of designers, I can step in and create the necessary design using XD",
       "experience": "1.5 years"
     }
   ]

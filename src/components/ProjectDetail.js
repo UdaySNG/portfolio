@@ -132,7 +132,7 @@ const ProjectDetail = () => {
           <div className="project__detail__buttons">
             {/* Add Live Site Button */}
             <button className="project__detail__live-site">
-              <i className="fa-solid fa-globe"></i> View
+              <i className="fa-solid fa-globe"></i> Live
             </button>
             {/* Add GitHub Button */}
             <button className="project__detail__github">
@@ -192,6 +192,7 @@ const ProjectDetail = () => {
 
 const ImageSlideshow = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isPaused, setPaused] = useState(false);
 
   useEffect(() => {
@@ -208,6 +209,7 @@ const ImageSlideshow = ({ images }) => {
 
   const handleStripeClick = (index) => {
     setCurrentImageIndex(index);
+    setActiveImageIndex(index);
   };
 
   const handlePauseToggle = () => {
@@ -230,7 +232,7 @@ const ImageSlideshow = ({ images }) => {
         {images.map((_, index) => (
           <div
             key={index}
-            className={`stripe ${index <= currentImageIndex ? "filled" : ""}`}
+            className={`stripe ${index === currentImageIndex ? "filled" : ""}`}
             onClick={() => handleStripeClick(index)}
           />
         ))}
@@ -239,12 +241,13 @@ const ImageSlideshow = ({ images }) => {
         src={`${process.env.PUBLIC_URL}/${images[currentImageIndex]}`}
         alt="Slideshow"
         style={{
-          transition: "opacity 0.3s ease-in-out", // Voeg een overgang toe aan de opacity
+          transition: "opacity 0.3s ease-in-out",
         }}
       />
     </div>
   );
 };
+
 
 const Accordion = ({ isOpen, toggleAccordion, content, name }) => {
   const accordionContentRef = useRef(null);

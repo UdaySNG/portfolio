@@ -149,12 +149,12 @@
   }
 
   .stripe {
-    width: 5rem;
-    height: 0.5rem;
+    width: 7rem;
+    height: 0.7rem;
     background-color: #ccc;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 5px;
+    border-radius: 0.3rem;
   }
 
   .stripe.filled {
@@ -162,20 +162,22 @@
   }
 
   .pause-button {
+    cursor: pointer;
     position: absolute;
     bottom: 10px;
     left: 10px;
-    font-size: 20px;
+    font-size: 2.2rem;
     background: none;
     border: none;
-    color: #333;
-    cursor: pointer;
+    color: #333; 
+  
+    &:hover {
+      color: #555;
+    }
+  
+  
   }
-
-  .pause-button:hover {
-    color: #555;
-  }
-
+  
   .slideshow-navigation {
     display: flex;
     justify-content: center;

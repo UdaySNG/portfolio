@@ -26,16 +26,20 @@ const Project = () => {
 
   return (
     <section className="projects">
-    <h3 className="projects__heading">My Projects.</h3>
-    <ul className="projects__list">
-      {Array.isArray(projects) && projects.length > 0 ? (
-        projects.map((project) => (
-          <li key={project.id} className="projects__item">
-            <img
-              src={`${process.env.PUBLIC_URL}/${Array.isArray(project.image) ? project.image[0] : project.image}`}
-              alt={project.title}
-              className="projects__image"
-            />
+      <h3 className="projects__heading">My Projects.</h3>
+      <ul className="projects__list">
+        {Array.isArray(projects) && projects.length > 0 ? (
+          projects.map((project) => (
+            <li key={project.id} className="projects__item">
+              <img
+                src={`${process.env.PUBLIC_URL}/${
+                  Array.isArray(project.image)
+                    ? project.image[0]
+                    : project.image
+                }`}
+                alt={project.title}
+                className="projects__image"
+              />
               <div className="projects__content">
                 <h4 className="projects__title">{project.title}</h4>
                 <p className="projects__text">{project.intro}</p>
@@ -58,9 +62,23 @@ const Project = () => {
                 </p>
                 {/* Only render the Link if there is a valid project */}
                 {project.id && (
-                  <Link to={`/modal/${project.id}`} className="projects__link">
-                    Learn More
-                  </Link>
+                  <div className="projects__links">
+                    <Link
+                      to={`/modal/${project.id}`}
+                      className="projects__link"
+                    >
+                      Learn More
+                    </Link>
+                    <div className="projects__github">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
                 )}
               </div>
             </li>
