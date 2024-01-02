@@ -9,7 +9,8 @@
       "title": "Udemy-Clone",
       "intro": "A clone of the frontpage of Udemy",
       "text": "I set out to replicate Udemy's Landing page. Using HTML, CSS, and JavaScript. This solo project Improved my skills massively and was completed in just four weeks.",
-      "link": "https://www.example.com/project1",
+      "git": "https://github.com/Uday-Singh1/udemy-clone",
+      "live": "https://uday-singh1.github.io/udemy-clone/",
       "numPeople": 1,
       "duration": "3 weeks",
       "features": "",
@@ -23,7 +24,8 @@
       "title": "Banky",
       "intro": "A small banking app",
       "text": "In a span of three weeks, I created a bank application, during which I deepened my knowledge of JSON and JavaScript. This project was a valuable learning experience in managing financial data and displaying it on the screen.",
-      "link": "https://www.example.com/project2",
+      "git": "https://github.com/Uday-Singh1/banky",
+      "live": "https://uday-singh1.github.io/banky/",
       "numPeople": 1,
       "duration": "3 weeks",
       "features": "OOP",
@@ -37,7 +39,8 @@
       "title": "Colorpicker",
       "intro": "A big colorpicker site",
       "text": "Inspired by Colorhunt, my go to color website, I created a color picker using HTML, CSS, and JavaScript. This project enhanced my web development skills and allowed me to explore my artistic side. I completed it in less than one and a half weeks, thanks to valuable learning experiences, all on my own.",
-      "link": "https://www.example.com/project3",
+      "git": "https://github.com/Uday-Singh1/colorpicker-live/tree/main",
+      "live": "https://uday-singh1.github.io/colorpicker-live/",
       "numPeople": 1,
       "duration": "3 weeks",
       "features": "HSL",
@@ -51,7 +54,8 @@
       "title": "Yubtub",
       "intro": "A youtube clone",
       "text": "I independently crafted a YouTube clone with a Twitch-style interface, starting with local videos and aiming to incorporate real YouTube links. While challenging, this all-JavaScript project was immensely rewarding.",
-      "link": "https://www.example.com/project4",
+      "git": "https://github.com/Uday-Singh1/Yubtub-frontend-m8",
+      "live": "https://uday-singh1.github.io/Yubtub-frontend-m8/",
       "numPeople": 1,
       "duration": "1.5 weeks",
       "features": "hovering player - comments",
@@ -65,7 +69,8 @@
       "title": "Encrypter",
       "intro": "An encrypter app",
       "text": "using the Caesar cipher method in JavaScript i created an app for encrypting and decrypting messages",
-      "link": "https://www.example.com/project5",
+      "git": "https://github.com/Uday-Singh1/encrypter/tree/main",
+      "live": "https://uday-singh1.github.io/encrypter/",
       "numPeople": 1,
       "duration": "2 weeks",
       "features": "Text encryption",
@@ -75,14 +80,18 @@
     },
     {
       "id": 6,
-      "image": ["./images/placeholder.png"],
+      "image": [
+        "./images/projecten/Amsterdam-1.png",
+        "./images/projecten/Amsterdam-2.png"
+      ],
       "title": "Amsterdam BMV",
       "intro": "In Works",
       "text": "In Works",
-      "link": "https://www.example.com/project6",
+      "git": "https://github.com/Uday-Singh1/amsterdam-bmv?tab=readme-ov-file",
+      "live": "https://uday-singh1.github.io/amsterdam-bmv/",
       "numPeople": 0,
       "duration": "3 weeks",
-      "languages": [""]
+      "languages": ["React", "CSS"]
     }
   ],
 
@@ -120,19 +129,31 @@
     {
       "title": "Git",
       "icon": "fa-brands fa-git-alt",
-      "text": "Experience in using Git for individual and collaborative work",
+      "text": "Experience in using Git for individual and collaborative work.",
       "experience": "1.5 years"
+    },
+    {
+      "title": "Json",
+      "icon": "fa-solid fa-file",
+      "text": "Familiar with creating JSON files and utilizing them in JavaScript as APIs. A fun fact: most of the data on this page comes from a data.json file.",
+      "experience": "1 year"
+    },
+    {
+      "title": "Docker",
+      "icon": "devicon-docker-plain",
+      "text": "Familiar with creating and using Docker containers for frontend and backend.",
+      "experience": "8 months"
     },
     {
       "title": "After Effects",
       "icon": "devicon-aftereffects-plain",
-      "text": "Experience in creating fun little video's in my spare time using AE",
+      "text": "Experience in creating fun little video's in my spare time using AE.",
       "experience": "3 years"
     },
     {
       "title": "Adobe XD",
       "icon": "devicon-xd-plain",
-      "text": "In the absence of designers, I can step in and create the necessary design using XD",
+      "text": "In the absence of designers, I can step in and create the necessary design using XD.",
       "experience": "1.5 years"
     }
   ]

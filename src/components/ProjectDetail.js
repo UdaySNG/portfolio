@@ -84,6 +84,16 @@ const ProjectDetail = () => {
 
   const isSlideshow = project.image && project.image.length > 1;
 
+  // Function to navigate to the live site URL
+  const goToLiveSite = () => {
+    window.open(project.live, "_blank");
+  };
+
+  // Function to navigate to the GitHub URL
+  const goToGitHub = () => {
+    window.open(project.git, "_blank");
+  };
+
   return (
     <main className={`project__detail ${darkMode ? "dark-mode" : ""}`}>
       <button
@@ -131,13 +141,17 @@ const ProjectDetail = () => {
         <div className="project__detail__buttons__wrapper">
           <div className="project__detail__buttons">
             {/* Add Live Site Button */}
-            <button className="project__detail__live-site">
-              <i className="fa-solid fa-globe"></i> Live
-            </button>
+            {project.live && (
+              <button className="project__detail__live-site" onClick={goToLiveSite}>
+                <i className="fa-solid fa-globe"></i> Live
+              </button>
+            )}
             {/* Add GitHub Button */}
-            <button className="project__detail__github">
-              <i className="fa-brands fa-github"></i> GitHub
-            </button>
+            {project.git && (
+              <button className="project__detail__github" onClick={goToGitHub}>
+                <i className="fa-brands fa-github"></i> GitHub
+              </button>
+            )}
           </div>
         </div>
         <div className="project__detail__skills">
@@ -247,7 +261,6 @@ const ImageSlideshow = ({ images }) => {
     </div>
   );
 };
-
 
 const Accordion = ({ isOpen, toggleAccordion, content, name }) => {
   const accordionContentRef = useRef(null);

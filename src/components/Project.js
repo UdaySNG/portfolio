@@ -71,7 +71,7 @@ const Project = () => {
                     </Link>
                     <div className="projects__github">
                       <a
-                        href={project.link}
+                        href={project.git}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

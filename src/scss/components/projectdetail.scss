@@ -122,14 +122,23 @@
     border-radius: 1rem;
   }
 
+  .project__detail__image__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem;
+    object-fit: contain;
+  }
+
   .project__detail__image {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
-    max-height: 70rem;
+    height: auto;
     border-radius: 1rem;
+    width: 68.9%;
   }
 
   .project__detail__image img {
@@ -271,8 +280,8 @@
 
     &.open {
       .accordion__content {
-        max-height: 500px; /* Adjust to the desired open height */
-        transition: max-height 0.3s ease-in-out; /* Add transition property */
+        max-height: 500px; 
+        transition: max-height 0.3s ease-in-out;
       }
     }
   }
@@ -280,7 +289,7 @@
   .accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out; /* Add transition property */
+    transition: max-height 0.3s ease-in-out; 
   }
 
   .dark-mode-button {
@@ -290,29 +299,31 @@
     width: 100%;
     padding-top: 2rem;
     padding-right: 2rem;
-    font-size: 4.5rem; // Adjust the font size as needed
+    font-size: 4.5rem; 
     cursor: pointer;
     color: #000000;
-
     border: none;
-
     transition: 0.3s;
+  }
+
+  .footer{
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 62.5rem) {
   .project__detail {
-    height: 100%; /* Remove fixed height */
+    height: 100%;
     overflow: hidden;
 
     &__title-and-button {
       width: 100%;
-      justify-content: space-between; /* Adjust alignment */
+      justify-content: space-between; 
       align-items: center;
-      flex-direction: row; /* Change to row */
-      text-align: center; /* Adjust text alignment */
+      flex-direction: row; 
+      text-align: center;
       gap: 1rem;
-      padding-right: 0; /* Remove padding */
+      padding-right: 0;
     }
 
     &__title {
@@ -353,7 +364,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
       width: 100%;
       padding: 1.1rem;
       object-fit: contain;
@@ -363,7 +373,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: auto;
+      height: 100%;
       width: 100%; /* Adjust width */
       border-radius: 5px;
     }
@@ -420,5 +430,29 @@
     font-size: 4rem;
     cursor: pointer;
     padding: 1rem; /* Adjust padding */
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+  .project__detail__image__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100rem;
+    padding: 1.1rem;
+    object-fit: contain;
+  }
+
+  .project__detail__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100rem;
+    width: 100rem; /* Adjust width */
+    border-radius: 5px;
   }
 }
