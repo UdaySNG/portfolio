@@ -1,23 +1,34 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import "../scss/components/about.scss";
-import skillsData from "../data/data.json";
+import aboutData from "../data/data.json";
 
 const About = () => {
-  const personalInfo = {
-    aboutMe:
-      "I'm a passionate web developer with expertise in front-end technologies. My goal is to create user-friendly and visually appealing websites.",
+  const { aboutMeData } = aboutData;
+
+  const openCV = () => {
+    const pdfPath = `${process.env.PUBLIC_URL}/images/Cv-Uday-EN.pdf`; // Vervang 'cv.pdf' met de daadwerkelijke naam van je PDF-bestand
+    window.open(pdfPath, '_blank');
   };
 
-  const skills = skillsData.skills && Array.isArray(skillsData.skills) ? skillsData.skills : [];
-
   return (
-    <section className="about-wrapper">
-      <div className="about">
-        <div className="about__section">
-          <h3>About Me.</h3>
-          <p className="about__description">{personalInfo.aboutMe}</p>
-        </div>
+    <section className="about__wrapper">
+      <h3 className="about__title">About Me.</h3>
+      <div className="about__cards">
+        {aboutMeData.map((item) => (
+          <div className="about__card" key={item.title} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${item.image})` }}>
+            <div className="about__section">
+              <h3 className="about__card-title">{item.title}</h3>
+              <p className="about__card-description">{item.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
+      <button className="about__cv-button" onClick={openCV}>
+        <FontAwesomeIcon icon={faFilePdf} />
+        My CV
+      </button>
     </section>
   );
 };

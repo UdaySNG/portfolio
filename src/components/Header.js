@@ -58,15 +58,20 @@ const Header = (props) => {
       <div className={navClass}>
         {/* <MenuItem label="Home" to="home" onClick={toggleMenu} /> */}
         <MenuItem label="Projects" to="projects" onClick={toggleMenu} />
-        <MenuItem label="About me" to="about" onClick={toggleMenu} />
-        <MenuItem label="Contact" to="footer" onClick={toggleMenu} />
+        <MenuItem label="About me" to="about__wrapper" onClick={toggleMenu} />
+        <MenuItem label="Skills" to="skills-heading" onClick={toggleMenu} />
+        <MenuItem label="Contact" to="contact" onClick={toggleMenu} />
       </div>
 
       <button
         className={`${darkModeToggleClass} ${darkMode ? "dark-mode" : ""}`}
         onClick={toggleDarkMode}
       >
-        {darkMode ? <i class="fa-solid fa-sun"></i> :<i class="fa-solid fa-moon"></i>}
+        {darkMode ? (
+          <i class="fa-solid fa-sun"></i>
+        ) : (
+          <i class="fa-solid fa-moon"></i>
+        )}
       </button>
     </header>
   );

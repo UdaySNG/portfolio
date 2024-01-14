@@ -52,6 +52,15 @@ body.dark-mode {
     color: #ffffff;
   }
 
+  .about__cv-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+      background-color: #ffffffe7;
+    }
+  }
+
   // i {
   //   color: #ffffff;
   // }
@@ -101,14 +110,8 @@ body.dark-mode {
   }
   .dark-mode-button {
     color: #ffffff;
-  
   }
-
-  
 }
-
-
-
 
 body.dark-mode .fab.fa-github,
 body.dark-mode .fas.fa-users,

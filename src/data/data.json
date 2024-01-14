@@ -117,7 +117,7 @@
     {
       "title": "Javascript",
       "icon": "fa-brands fa-js",
-      "text": "A site needs to function, my experience in JS helps me make very functional sites, learning it also made my life around frameworks easier.",
+      "text": "A site needs to function, my experience in JS helps me make very functional sites with data and oop included.",
       "experience": "1.5 years"
     },
     {
@@ -133,9 +133,9 @@
       "experience": "1.5 years"
     },
     {
-      "title": "Json",
-      "icon": "fa-solid fa-file",
-      "text": "Familiar with creating JSON files and utilizing them in JavaScript as APIs. A fun fact: most of the data on this page comes from a data.json file.",
+      "title": "Php",
+      "icon": "devicon-php-plain",
+      "text": "I have used php for creating backend projects such as an cms and am now using it with Laravel.",
       "experience": "1 year"
     },
     {
@@ -144,6 +144,7 @@
       "text": "Familiar with creating and using Docker containers for frontend and backend.",
       "experience": "8 months"
     },
+
     {
       "title": "After Effects",
       "icon": "devicon-aftereffects-plain",
@@ -155,6 +156,24 @@
       "icon": "devicon-xd-plain",
       "text": "In the absence of designers, I can step in and create the necessary design using XD.",
       "experience": "1.5 years"
+    }
+  ],
+
+  "aboutMeData": [
+    {
+      "title": "Personality",
+      "description": "I'm a creative and detail-oriented individual who enjoys solving problems and thinking outside the box. I thrive in collaborative environments and am always open to new ideas and perspectives.",
+      "image": "../images/swiss.jpg"
+    },
+    {
+      "title": "Programming",
+      "description": "I began coding in 2021, accumulating valuable knowledge and crafting diverse websites to showcase my web development skills. Eager for continued growth and challenges in this field.",
+      "image": "../images/coding.webp"
+    },
+    {
+      "title": "Hobbies",
+      "description": "I play and watch football in my free time, along with designing logos and editing videos for fun. I enjoy spending time with friends and family whenever possible.",
+      "image": "../images/football.jpg"
     }
   ]
 }
