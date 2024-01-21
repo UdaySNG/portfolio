@@ -68,14 +68,14 @@
       "image": ["./images/projecten/encrypt.webp"],
       "title": "Encrypter",
       "intro": "An encrypter app",
-      "text": "using the Caesar cipher method in JavaScript i created an app for encrypting and decrypting messages",
+      "text": "Using the Caesar cipher method in JavaScript i created an app for encrypting and decrypting messages.",
       "git": "https://github.com/Uday-Singh1/encrypter/tree/main",
       "live": "https://uday-singh1.github.io/encrypter/",
       "numPeople": 1,
       "duration": "2 weeks",
       "features": "Text encryption",
       "upcoming": "",
-      "details": "Rendered in javascript - Caesar cipher",
+      "details": "Rendered in javascript\nCaesar cipher",
       "languages": ["HTML", "SCSS", "JavaScript"]
     },
     {
@@ -85,11 +85,12 @@
         "./images/projecten/Amsterdam-2.png"
       ],
       "title": "Amsterdam BMV",
-      "intro": "In Works",
-      "text": "In Works",
+      "intro": "A site for an department of the goverment of Amsterdam.",
+      "text": "Using React and CSS i created an Frotend page for the BMV department of Amsterdam's goverment.",
       "git": "https://github.com/Uday-Singh1/amsterdam-bmv?tab=readme-ov-file",
       "live": "https://uday-singh1.github.io/amsterdam-bmv/",
-      "numPeople": 0,
+      "numPeople": 1,
+      "features": "Project selection \nMaps \nButton data switcher",
       "duration": "3 weeks",
       "languages": ["React", "CSS"]
     }

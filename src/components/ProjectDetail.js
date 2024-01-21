@@ -142,7 +142,10 @@ const ProjectDetail = () => {
           <div className="project__detail__buttons">
             {/* Add Live Site Button */}
             {project.live && (
-              <button className="project__detail__live-site" onClick={goToLiveSite}>
+              <button
+                className="project__detail__live-site"
+                onClick={goToLiveSite}
+              >
                 <i className="fa-solid fa-globe"></i> Live
               </button>
             )}
@@ -274,6 +277,17 @@ const Accordion = ({ isOpen, toggleAccordion, content, name }) => {
     }
   }, [isOpen]);
 
+  const renderList = (content) => {
+    const items = content.split("\n").map((item, index) => (
+      <li key={index}>
+        <i className="fa-solid fa-check"></i>
+        <span className="list-item-text">{item}</span>
+      </li>
+    ));
+    return <ul>{items}</ul>;
+  };
+  
+
   return (
     <article className="project__detail__accordion">
       <button onClick={toggleAccordion}>
@@ -288,7 +302,8 @@ const Accordion = ({ isOpen, toggleAccordion, content, name }) => {
         )}
       </button>
       <div ref={accordionContentRef} className="accordion__content">
-        {content}
+        {/* Render the content as a list with arrow points */}
+        {renderList(content)}
       </div>
     </article>
   );
