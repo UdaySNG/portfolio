@@ -15,6 +15,15 @@
     text-align: center;
   }
 
+  &__text {
+    font-size: clamp(1.5rem, 2.5rem, 3rem); /* Adjust the min, preferred, and max values as needed */
+    text-align:left;
+    margin-bottom: 1rem; /* Added margin for spacing */
+    word-spacing: normal;
+    line-height: 1.5;
+  }
+  
+
   &__list {
     display: flex;
     justify-content: center;
@@ -59,11 +68,7 @@
     padding: 20px;
   }
 
-  &__text {
-    font-size: 2.5rem;
-    text-align: justify;
-    margin-bottom: 1rem; // Added margin for spacing
-  }
+
 
   &__info {
     display: flex;

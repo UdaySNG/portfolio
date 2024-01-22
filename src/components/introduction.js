@@ -48,7 +48,7 @@ const Intro = () => {
           </h2>
         </div>
         <figure className={`introduction__section__figure ${fadeIn ? 'fade-in' : ''}`}>
-        <img src={process.env.PUBLIC_URL + '/images/uday-pfp.jpg'} alt="" className="section__image" />
+        <img src={process.env.PUBLIC_URL + '/images/uday-pfp.webp'} alt="" className="section__image" />
 
         </figure>
       </section>

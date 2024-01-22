@@ -21,6 +21,7 @@ const Project = () => {
     SCSS: "fa-brands fa-sass",
     JavaScript: "fa-brands fa-js",
     React: "fa-brands fa-react",
+    Laravel: "fa-brands fa-laravel",
     // Add more mappings as needed
   };
 

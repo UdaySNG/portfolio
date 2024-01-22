@@ -3,8 +3,8 @@
     {
       "id": 1,
       "image": [
-        "./images/projecten/udemy.jpg",
-        "./images/projecten/udemy2.jpg"
+        "./images/projecten/udemy.webp",
+        "./images/projecten/udemy2.webp"
       ],
       "title": "Udemy-Clone",
       "intro": "A clone of the frontpage of Udemy",
@@ -81,8 +81,8 @@
     {
       "id": 6,
       "image": [
-        "./images/projecten/Amsterdam-1.png",
-        "./images/projecten/Amsterdam-2.png"
+        "./images/projecten/Amsterdam-1.webp",
+        "./images/projecten/Amsterdam-2.webp"
       ],
       "title": "Amsterdam BMV",
       "intro": "A site for an department of the goverment of Amsterdam.",
@@ -140,10 +140,23 @@
       "experience": "1 year"
     },
     {
+      "title": "Laravel",
+      "icon": "fa-brands fa-laravel",
+      "text": "Recently started using Laravel and learned to understand Php much better.",
+      "experience": "2 months"
+    },
+    {
       "title": "Docker",
       "icon": "devicon-docker-plain",
       "text": "Familiar with creating and using Docker containers for frontend and backend.",
       "experience": "8 months"
+    },
+
+    {
+      "title": "Wordpress",
+      "icon": "fa-brands fa-wordpress",
+      "text": "I am familiar with Wordpress but prefer to code my work from start to finish.",
+      "experience": "1.5 months"
     },
 
     {
@@ -164,7 +177,7 @@
     {
       "title": "Personality",
       "description": "I'm a creative and detail-oriented individual who enjoys solving problems and thinking outside the box. I thrive in collaborative environments and am always open to new ideas and perspectives.",
-      "image": "../images/swiss.jpg"
+      "image": "../images/bergen.webp"
     },
     {
       "title": "Programming",
@@ -174,7 +187,7 @@
     {
       "title": "Hobbies",
       "description": "I play and watch football in my free time, along with designing logos and editing videos for fun. I enjoy spending time with friends and family whenever possible.",
-      "image": "../images/football.jpg"
+      "image": "../images/neymar.webp"
     }
   ]
 }
