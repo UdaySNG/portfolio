@@ -7,15 +7,31 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 
+const Section = ({ id, children }) => (
+  <section id={id} className="section">
+    {children}
+  </section>
+);
+
 const Main = () => {
   return (
     <>
       <main className="main">
-        <Intro id="intro" />
-        <Project id="project" />
-        <About id="about" />
-        <Skills id="skills" />
-        <Contact id="contact" />
+        <Section>
+          <Intro />
+        </Section>
+        <Section id="project">
+          <Project />
+        </Section>
+        <Section id="about">
+          <About />
+        </Section>
+        <Section id="skills">
+          <Skills />
+        </Section>
+        <Section id="contact">
+          <Contact />
+        </Section>
         <Footer />
       </main>
     </>

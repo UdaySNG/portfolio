@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { useDarkMode } from "./DarkMode";
-import { Link } from "react-scroll";
 import "../scss/components/header.scss";
 
-const MenuItem = ({ label, to, onClick }) => {
+const ScrollButton = ({ label, to, onClick }) => {
+  const handleClick = () => {
+    const targetElement = document.getElementById(to);
+
+    if (targetElement) {
+      const offset = targetElement.offsetTop - 70;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+
+      onClick();
+    }
+  };
+
   return (
-    <Link
-      activeClass="active"
-      to={to}
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={500}
-    >
-      <a href={`#${to}`} className="header__buttons" onClick={onClick}>
-        {label}
-      </a>
-    </Link>
+    <div className="header__buttons" onClick={handleClick}>
+      {label}
+    </div>
   );
 };
 
-const Header = (props) => {
+const Header = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,10 +62,10 @@ const Header = (props) => {
         </div>
       )}
       <div className={navClass}>
-        <MenuItem label="Projects" to="projects" onClick={toggleMenu} />
-        <MenuItem label="About me" to="about__wrapper" onClick={toggleMenu} />
-        <MenuItem label="Skills" to="skills-heading" onClick={toggleMenu} />
-        <MenuItem label="Contact" to="contact" onClick={toggleMenu} />
+        <ScrollButton label="Projects" to="project" onClick={toggleMenu} />
+        <ScrollButton label="About me" to="about" onClick={toggleMenu} />
+        <ScrollButton label="Skills" to="skills" onClick={toggleMenu} />
+        <ScrollButton label="Contact" to="contact" onClick={toggleMenu} />
       </div>
 
       <button
