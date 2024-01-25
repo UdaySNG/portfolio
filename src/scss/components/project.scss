@@ -9,20 +9,22 @@
   padding: 2rem;
   gap: 2rem;
 
-
   &__title {
     font-size: 3rem;
     text-align: center;
   }
 
   &__text {
-    font-size: clamp(1.5rem, 2.5rem, 3rem); /* Adjust the min, preferred, and max values as needed */
-    text-align:left;
+    font-size: clamp(
+      1.5rem,
+      2.5rem,
+      3rem
+    ); /* Adjust the min, preferred, and max values as needed */
+    text-align: left;
     margin-bottom: 1rem; /* Added margin for spacing */
     word-spacing: normal;
     line-height: 1.5;
   }
-  
 
   &__list {
     display: flex;
@@ -67,8 +69,6 @@
     justify-content: space-between;
     padding: 20px;
   }
-
-
 
   &__info {
     display: flex;
