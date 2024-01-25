@@ -32,8 +32,9 @@
   border-radius: 10px;
   width: calc(30% - 1rem);
   background-size: 110%;
+  max-width: 100%;
   background-repeat: no-repeat;
-  height: 30rem;
+  height: 28rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -86,14 +87,12 @@
     position: relative;
     z-index: 3;
     transition: z-index 0.3s ease-in-out;
-  
   }
 }
 
 .about__card-title {
   font-size: 2rem;
   text-align: center;
-
 }
 
 .about__button__section {
