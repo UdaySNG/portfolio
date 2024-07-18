@@ -4,6 +4,7 @@ import Intro from "./Introduction";
 import Project from "./Project";
 import About from "./About";
 import Skills from "./Skills";
+import Work from "./Work";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 
@@ -29,6 +30,9 @@ const Main = () => {
         <Section id="skills">
           <Skills />
         </Section>
+        {/* <Section id="work">
+          <Work />
+        </Section> */}
         <Section id="contact">
           <Contact />
         </Section>

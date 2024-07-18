@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "title": "Intern at Netxz",
+      "image": "./images/werken/netxz.jpeg",
+      "description": "My first work experience that i got was a internship at netxz where i made website apps with React,tailwind and laravel."
+    },
+    {
+      "id": 2,
+      "title": "Coming soon",
+      "image": "./images/projecten/Amsterdam-1.webp",
+      "description": "Work in progress"
+    }   
+  ]
+  

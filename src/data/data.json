@@ -115,6 +115,13 @@
       "text": "Ever since i found Scss i never looked back, using scss i can work in a categorized way, making my workflow better.",
       "experience": "2.5 years"
     },
+
+    {
+      "title": "Tailwind",
+      "icon": "devicon-tailwindcss-plain",
+      "text": "A quick and easy way to style is what i like to use. I have learned using this in my internship of 6 months and picked this up fast.",
+      "experience": "5 months"
+    },
     {
       "title": "Javascript",
       "icon": "fa-brands fa-js",
@@ -143,7 +150,7 @@
       "title": "Laravel",
       "icon": "fa-brands fa-laravel",
       "text": "Recently started using Laravel and learned to understand Php much better.",
-      "experience": "2 months"
+      "experience": "6 months"
     },
     {
       "title": "Docker",
@@ -156,7 +163,7 @@
       "title": "Wordpress",
       "icon": "fa-brands fa-wordpress",
       "text": "I am familiar with Wordpress but prefer to code my work from start to finish.",
-      "experience": "1.5 months"
+      "experience": "3 months"
     },
 
     {
@@ -170,6 +177,12 @@
       "icon": "devicon-xd-plain",
       "text": "In the absence of designers, I can step in and create the necessary design using XD.",
       "experience": "1.5 years"
+    },
+    {
+      "title": "Figma",
+      "icon": "fa-brands fa-figma",
+      "text": "In the absence of designers, I can step in and create the necessary design using XD.",
+      "experience": "2 months"
     }
   ],
 

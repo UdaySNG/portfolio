@@ -8,7 +8,7 @@ const About = () => {
   const { aboutMeData } = aboutData;
 
   const openCV = () => {
-    const pdfPath = `${process.env.PUBLIC_URL}/images/Uday-cv-EN.pdf`; // Vervang 'cv.pdf' met de daadwerkelijke naam van je PDF-bestand
+    const pdfPath = `${process.env.PUBLIC_URL}/images/UdayCV.pdf`; // Vervang 'cv.pdf' met de daadwerkelijke naam van je PDF-bestand
     window.open(pdfPath, "_blank");
   };
 
