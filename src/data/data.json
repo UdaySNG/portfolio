@@ -66,8 +66,8 @@
     {
       "id": 5,
       "image": ["./images/projecten/encrypt.webp"],
-      "title": "Encrypter",
-      "intro": "An encrypter app",
+      "title": "Encryptor",
+      "intro": "An encryptor app",
       "text": "Using the Caesar cipher method in JavaScript i created an app for encrypting and decrypting messages.",
       "git": "https://github.com/Uday-Singh1/encrypter/tree/main",
       "live": "https://uday-singh1.github.io/encrypter/",
@@ -85,8 +85,8 @@
         "./images/projecten/Amsterdam-2.webp"
       ],
       "title": "Amsterdam BMV",
-      "intro": "A site for an department of the goverment of Amsterdam.",
-      "text": "Using React and CSS i created an Frotend page for the BMV department of Amsterdam's goverment.",
+      "intro": "A site for an department of the government of Amsterdam.",
+      "text": "Using React and CSS i created an Frontend page for the BMV department of Amsterdam's Government.",
       "git": "https://github.com/Uday-Singh1/amsterdam-bmv?tab=readme-ov-file",
       "live": "https://uday-singh1.github.io/amsterdam-bmv/",
       "numPeople": 1,
